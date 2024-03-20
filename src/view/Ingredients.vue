@@ -33,6 +33,7 @@ import store from "../store";
 const router = useRouter();
 const keyword = ref("");
 const ingredients = ref([]);
+
 const computedIngredients = computed(() => {
   if (!computedIngredients) return ingredients;
   return ingredients.value.filter((i) =>
